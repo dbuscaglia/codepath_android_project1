@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/video_main_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/streams"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:id="@+id/ivPhoto"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/stub"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ivPhoto"
+            android:layout_alignLeft="@id/ivPhoto">
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/heart"
+            android:layout_margin="3dp"
+            android:id="@+id/ivHeart" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvLikes"
+            android:layout_toRightOf="@id/ivHeart"
+            android:textSize="12dp"
+            android:maxLines="1"
+            android:text="55555"
+            android:textStyle="normal"
+            android:inputType="number" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@id/tvLikes"
+            android:layout_alignLeft="@id/tvLikes"
+            android:id="@+id/tvCaption"
+            android:textSize="12dp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:paddingTop="3dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:textStyle="normal" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+    android:id="@+id/image_bar"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:layout_alignParentTop="true"
+    android:background="#BFf1f7fe"
+        android:focusableInTouchMode="false">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/ivPosterImage"
+            android:paddingTop="2dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="2dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPosterName"
+            android:layout_toRightOf="@id/ivPosterImage"
+            android:paddingLeft="10dp"
+
+            android:text="GRAB ME"
+            android:layout_centerVertical="true"
+            android:textColor="#34659d"
+            android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="1d"
+                android:id="@+id/tvTimePosted"
+                android:paddingRight="10dp"
+                />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_toLeftOf="@id/tvTimePosted"
+                android:layout_centerVertical="true"
+                android:paddingRight="3dp"
+                android:src="@drawable/clock"/>
+
+    </RelativeLayout>
+</RelativeLayout>
