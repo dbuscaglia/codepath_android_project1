@@ -30,7 +30,7 @@ The following **bonus** features are implemented:
 
 ## Video Walkthrough 
 
-[Video Link](http://i.imgur.com/jhUgA53.webm)
+[Video Link](http://imgur.com/pV8pndA.webm)
 
 ## Open-source libraries used
 
