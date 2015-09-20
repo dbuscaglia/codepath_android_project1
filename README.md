@@ -2,7 +2,7 @@
 
 SimpleInstagram is an android app that allows a user to check out popular photos from Instagram. The app utilizes Instagram API to display images and basic image information to the user.
 
-Time spent: 7 hours spent in total
+Time spent: ~8 hours spent in total.  Hard to tell as it was split up over 3 days.
 
 ## User Stories
 
